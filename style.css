@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@500&family=Edu+QLD+Beginner:wght@400;600;700&family=Edu+TAS+Beginner:wght@700&family=Fredoka+One&family=Josefin+Sans:wght@300&family=Lato&family=Montserrat:wght@100;600&family=Mouse+Memoirs&family=Poppins:ital,wght@0,500;1,200&family=Quicksand:wght@300&family=Roboto:ital,wght@0,100;0,300;1,300&family=Shadows+Into+Light&family=Ubuntu:wght@300&family=Work+Sans:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Fredoka One', cursive;
+}
+
+.bg-img{
+    background: url(./images/2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .bg-img:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.174);
+} */
+
+.content{
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    text-align: center;
+    padding: 60px 32px;
+    width: 370px;
+    height: 95%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.133);
+    border: 1px solid #fff;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
+}
+
+.content header{
+    color: #f3b53c;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+}
+
+.field {
+    height: 45px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+
+.field input {
+    height: 100%;
+    width: 100%;
+    /* background: transparent; */
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.field select{
+    height: 100%;
+    width: 100%;
+    /* background: transparent; */
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px; 
+}
+
+#submit{
+    background: #2d658a;
+    width: 50%;
+    margin-left: 70px;
+    color: white;
+}
+
+input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
+  input:focus:invalid {
+    box-shadow: none;
+  }
+
+input:valid{
+    box-shadow: 0 0 5px 1px green;
+}
+
+  p{
+    font-size: 14px;
+    margin: 15px 0;
+    display: inline-block;
+    padding: 5px 20px;
+  }
+
